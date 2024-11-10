@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jersey+10&family=Jersey+15+Charted&family=VT323&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+body{
+  background: black;
+  color: white;
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items:center;
+  max-height: max-content;
+  min-height:100vh;
+  max-width: 100vw;
+  font-size: 1.9em;
+  margin-inline: 1rem;
+  /* position: relative; */
+  overflow: scroll;
+  
+}
+
+#name{
+  font-size: 3em;
+  margin-top: 10rem;
+  margin-bottom:4rem;
+  
+}
+#name > a {
+  text-decoration:none;
+  color:white;
+}
+#name > a:hover, #name > a:active {
+  text-decoration: underline;
+}
+
+#desc{
+  font-size: 1.7em;
+  margin-bottom: 4rem;
+}
+
+
+.container {
+  /* border: 1px white solid; */
+  /* border-radius: 13px; */
+  flex: 1;
+  text-align:center;
+  justify-self:start;
+  max-width: 80vw;
+}
+
+#details {
+  text-align:left;
+  width: 62%;
+  margin-inline:auto;
+  font-size: 1.15em;
+  display:flex;
+  flex-direction:column;
+  gap: 0.8rem;
+
+}
+ 
+
+.socials{
+min-width: 70vw;
+display:flex;
+justify-content: center;
+align-items:end;
+justify-self:end;
+margin-top: 2em;
+margin-bottom: 1.5em; 
+}
+
+.socials > * {
+  text-decoration:none;
+  padding-inline: 2em;
+  padding-block: 0.5em;
+  border: 1px white solid;
+  
+  color:white;
+  font-size: 1.3rem;
+}
+
+.socials > a:first-child{
+  
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.socials > a:last-child{
+  border-radius: 0rem 0.2rem 0.2rem 0rem;
+}
+.socials > a:hover, .socials > a:active {
+  text-decoration: underline;
+
+}
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  
+  
+}
+
+.jersey-15-charted-regular {
+  font-family: "Jersey 15 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-11-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 4600;
+  font-style: normal;
+  font-size: 75px;
+  margin-top: -70px;
+}
+
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@media (max-width: 550px) {
+  body{
+    font-size: 1.2em;
+    margin-inline:0;
+    overflow-y:scroll;
+    min-height: 100svh;
+    position:relative;
+    
+    
+  }
+  #desc{
+    font-size: 1.8em;
+    /* margin-top: 0.8em; */
+    margin-bottom:2rem;
+  }
+
+  .socials > a {
+    font-size: 0.7rem;
+  }
+  .socials{
+    justify-self:end;
+    min-width: 90%;
+    
+  }
+  .container {
+    max-width: 80vw;
+    
+  }
+  #details {
+    min-width: 90%;
+    letter-spacing:2px;
+    font-size: 1.4rem;
+    gap: 0.6rem; 
+  }
+  
+  #name {
+    line-height: 0.7em;
+    margin-block: 2rem;
+    margin-top: 3rem;
+    /* margin-top: 1rem; */
+
+  }
+ 
+
+  
+
+}
